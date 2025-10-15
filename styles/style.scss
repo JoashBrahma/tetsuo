@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "Alumni Sans SC";
+  src: url(../assets/fonts/AlumniSansSC.ttf);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb {
+  background: orangered;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Alumni Sans SC", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  font-size: 10px;
+  font-family: "Alumni Sans SC", sans-serif;
+  color: whitesmoke;
+  background-color: black;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+header {
+  padding: 1vmin;
+  margin-bottom: 8rem;
+
+  .header__inner {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo h1 {
+    font-size: 4.8rem;
+  }
+
+  .nav__links {
+    font-size: 1.8rem;
+    display: flex;
+    gap: 2em;
+  }
+
+  .nav__link:nth-child(1) a {
+    color: orangered;
+  }
+}
+
+main {
+  border-bottom: 5px solid orangered;
+
+  section {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    padding: 2rem;
+    margin-bottom: 16rem;
+
+    .sect__images {
+      position: relative;
+
+      img {
+        object-fit: cover;
+        object-position: top center;
+        position: absolute;
+      }
+
+      img:nth-child(1) {
+        width: 100%;
+        height: 75%;
+        z-index: 2;
+      }
+
+      img:nth-child(2) {
+        width: 65%;
+        height: 55%;
+        z-index: 1;
+      }
+
+      img:nth-child(3) {
+        width: 30%;
+        height: 40%;
+        z-index: 3;
+        border: 2px solid grey;
+      }
+    }
+
+    .sect__texts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem 6rem;
+
+      h2 {
+        font-size: 6.4rem;
+        line-height: 0.9;
+      }
+
+      hr {
+        width: 10%;
+        border: 2px solid whitesmoke;
+        margin: 2vmin 0 3vmin 0;
+      }
+
+      p,
+      button {
+        font-size: 2rem;
+      }
+
+      p {
+        color: rgb(200, 200, 200);
+        line-height: 1;
+        margin-bottom: 2em;
+      }
+
+      button {
+        width: fit-content;
+        padding: 0.5em 3em;
+        color: whitesmoke;
+        background-color: transparent;
+        border: 2px solid whitesmoke;
+      }
+    }
+  }
+
+  section:nth-child(1) {
+    .sect__images {
+      img:nth-child(1) {
+        right: -5%;
+      }
+
+      img:nth-child(2) {
+        bottom: 5%;
+      }
+
+      img:nth-child(3) {
+        bottom: 0;
+        right: 0;
+      }
+    }
+
+    .sect__texts {
+      padding-left: 8rem;
+    }
+  }
+
+  section:nth-child(2) {
+    .sect__images {
+      img:nth-child(1) {
+        top: -15%;
+        left: -5%;
+      }
+
+      img:nth-child(2) {
+        bottom: 0;
+        right: 0;
+      }
+
+      img:nth-child(3) {
+        bottom: 10%;
+      }
+    }
+
+    .sect__texts {
+      padding-right: 8rem;
+      text-align: end;
+      align-items: end;
+      justify-content: end;
+    }
+  }
+
+  section:nth-child(3) {
+    .sect__images {
+      img:nth-child(1) {
+        top: -20%;
+        right: -5%;
+      }
+
+      img:nth-child(2) {
+        bottom: 0;
+      }
+
+      img:nth-child(3) {
+        bottom: 10%;
+        right: 0;
+      }
+    }
+
+    .sect__texts {
+      justify-content: end;
+      padding-left: 8rem;
+    }
+  }
+
+  section:nth-child(4) {
+    .sect__images {
+      img:nth-child(1) {
+        top: -17.5%;
+        left: -5%;
+      }
+
+      img:nth-child(2) {
+        bottom: 0;
+        right: 0;
+      }
+
+      img:nth-child(3) {
+        bottom: 8%;
+      }
+    }
+
+    .sect__texts {
+      padding-right: 8rem;
+      text-align: end;
+      align-items: end;
+      justify-content: end;
+    }
+  }
+}
+
+footer {
+  .footer__inner {
+    width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+  }
+
+  .footer__logo {
+    font-size: 7.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+
+  .footer__links {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+}
