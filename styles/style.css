@@ -308,10 +308,27 @@ footer .footer__inner .footer__links .footer__link a {
   }
   main section .text-wrapper .view-btn {
     cursor: pointer;
+    position: relative;
+    transition: all 200ms ease;
   }
   main section .text-wrapper .view-btn:hover {
-    color: tomato;
-    border-color: tomato;
+    border-color: transparent;
+  }
+  main section .text-wrapper .view-btn::before {
+    content: "";
+    width: 12.5%;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 0;
+    transform: translate(-300%, 100%);
+    background-color: orangered;
+    clip-path: polygon(0% 0%, 100% 50%, 100% 50%, 0% 100%);
+    transition: all 200ms ease-in-out;
+    opacity: 0;
+  }
+  main section .text-wrapper .view-btn:hover:before {
+    transform: translate(-150%, 100%);
+    opacity: 100%;
   }
   footer .footer__inner .logo {
     font-size: 6.4rem;
