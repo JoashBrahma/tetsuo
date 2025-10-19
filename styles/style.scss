@@ -103,12 +103,14 @@ main {
         transform: scale(0.90);
         position: relative;
         z-index: 2;
+        box-shadow: 5px 5px 0 0 whitesmoke;
       }
 
       img:nth-child(2) {
         width: 65%;
         bottom: 0;
         z-index: 1;
+        box-shadow: 5px 5px 0 0 orangered;
       }
 
       img:nth-child(3) {
@@ -116,6 +118,7 @@ main {
         aspect-ratio: 1/1;
         bottom: 0;
         z-index: 3;
+        box-shadow: -5px -5px 0 0 orangered;
       }
     }
 
@@ -209,6 +212,8 @@ main {
   }
 
   section.sec4 {
+    margin-bottom: 1.5rem;
+
     .multi-image-wrapper {
       img:nth-child(1) {
         top: -5%;
@@ -231,7 +236,8 @@ footer {
   border-top: 2px solid tomato;
 
   .footer__inner {
-    padding: 1.5rem;
+    padding: 0 1.5rem;
+    margin: 3rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -333,7 +339,7 @@ footer {
 
   footer {
     .footer__inner {
-      margin: 5rem 0;
+      margin: 8rem 0;
 
       .logo {
         font-size: 4.8rem;
